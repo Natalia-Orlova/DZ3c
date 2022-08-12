@@ -28,4 +28,4 @@ double Distance(int xc1, int yc1, int zc1, int xc2, int yc2, int zc2)
     return distance;
 }
 
-Console.WriteLine($"Расстояние между точками А ({x1},{y1}, {z1}) и B ({x2},{y2}, {z2} -> {Distance(x1,y1,z1,x2,y2,z2)}");
+Console.WriteLine($"Расстояние между точками А ({x1},{y1}, {z1}) и B ({x2},{y2}, {z2}) -> {Distance(x1,y1,z1,x2,y2,z2)}");
