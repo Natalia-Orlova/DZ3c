@@ -7,22 +7,24 @@
 
 Console.Clear();
 Console.WriteLine("Введите число: ");
-int n = Convert.ToInt32(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 
-if (n < 0)
-    Console.WriteLine("Введено некорректное число, повторите попытку");
-else
+void Cube(int n)
 {
-    Console.WriteLine("----------");
-    Console.WriteLine(" n  | n^3 ");
-    Console.WriteLine("----------");
-
-    for (int i = 1; i <= n; i++)
+    if (n < 0)
+        Console.WriteLine("Введено некорректное число, повторите попытку");
+    else
     {
-        Console.WriteLine($"{i,3} | {Math.Pow(i, 3),4}");
+        Console.WriteLine("----------");
+        Console.WriteLine(" n  | n^3 ");
+        Console.WriteLine("----------");
+
+        for (int i = 1; i <= n; i++)
+        {
+            Console.WriteLine($"{i,3} | {Math.Pow(i, 3),4}");
+        }
+        Console.WriteLine("----------");
     }
-    Console.WriteLine("----------");
 }
-
-
+Cube (num);
 
