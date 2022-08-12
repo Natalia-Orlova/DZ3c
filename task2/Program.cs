@@ -14,6 +14,6 @@ Console.WriteLine("----------");
 
 for (int i = 1; i <= n; i++)
 {
-  Console.WriteLine($"{i, 3} | {i*i*i, 4}");  
+  Console.WriteLine($"{i, 3} | {Math.Pow(i,3), 4}"); 
 }
 Console.WriteLine("----------");
